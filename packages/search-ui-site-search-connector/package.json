@@ -23,8 +23,8 @@
     "test-ci": "jest --runInBand",
     "test": "jest",
     "clean": "rimraf es lib",
-    "watch-js": "./bin/watch-js",
-    "build-js": "./bin/build-js",
+    "watch-js": "babel src --out-dir lib --ignore '**/*.test.js' --watch & babel src --out-dir es --ignore '**/*.test.js' --watch &",
+    "build-js": "babel src --out-dir lib --ignore '**/*.test.js' && babel src --out-dir es --ignore '**/*.test.js'",
     "build": "run-s clean build-js",
     "watch": "run-p watch-js",
     "prepare": "npm run build"
