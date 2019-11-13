@@ -10,6 +10,7 @@
     "@elastic/search-ui-site-search-connector": "1.2.0",
     "moment": "^2.24.0",
     "react": "^16.8.6",
+    "react-app-polyfill": "^1.0.4",
     "react-dom": "^16.8.6",
     "react-scripts": "^3.0.1"
   },
