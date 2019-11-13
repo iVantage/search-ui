@@ -236,7 +236,7 @@ export default class SearchDriver {
     // `debounceManager.runWithDebounce`, and a subsequent call is made _updateSearchResults before that delay ends, we
     // want to make sure that outstanding call to "_updateSearchResults" is cancelled, as it would apply state updates
     // out of order.
-    this.debounceManager.cancelByName("_updateSearchResults");
+    // this.debounceManager.cancelByName("_updateSearchResults");
 
     this._setState({
       current,
@@ -274,7 +274,7 @@ export default class SearchDriver {
    * Application state updates are performed in _updateSearchResults, but we
    * wait to make the actual API calls until all actions have been called.
    */
-  _makeSearchRequest = DebounceManager.debounce(0, ({ skipPushToUrl }) => {
+  _makeSearchRequest = ({ skipPushToUrl }) => {
     const {
       current,
       filters,
@@ -333,19 +333,14 @@ export default class SearchDriver {
           // We debounce here so that we don't get a lot of intermediary
           // URL state if someone is updating a UI really fast, like typing
           // in a live search box for instance.
-          this.debounceManager.runWithDebounce(
-            this.urlPushDebounceLength,
-            "pushStateToURL",
-            this.URLManager.pushStateToURL.bind(this.URLManager),
-            {
-              current,
-              filters,
-              resultsPerPage,
-              searchTerm,
-              sortDirection,
-              sortField
-            }
-          );
+          this.URLManager.pushStateToURL.bind(this.URLManager)({
+            current,
+            filters,
+            resultsPerPage,
+            searchTerm,
+            sortDirection,
+            sortField
+          });
         }
       },
       error => {
@@ -354,7 +349,7 @@ export default class SearchDriver {
         });
       }
     );
-  });
+  };
 
   _setState(newState) {
     const state = { ...this.state, ...newState };

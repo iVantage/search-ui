@@ -19,8 +19,7 @@ export default function setSearchTerm(
     autocompleteResults = false,
     autocompleteSuggestions = false,
     shouldClearFilters = true,
-    refresh = true,
-    debounce = 0
+    refresh = true
   } = {}
 ) {
   if (this.debug)
@@ -30,30 +29,38 @@ export default function setSearchTerm(
   this._setState({ searchTerm });
 
   if (refresh) {
-    this.debounceManager.runWithDebounce(
-      debounce,
-      "_updateSearchResults",
-      this._updateSearchResults,
-      {
-        current: 1,
-        ...(shouldClearFilters && { filters: [] })
-      }
-    );
+    // this.debounceManager.runWithDebounce(
+    //   debounce,
+    //   "_updateSearchResults",
+    //   this._updateSearchResults,
+    //   {
+    //     current: 1,
+    //     ...(shouldClearFilters && { filters: [] })
+    //   }
+    // );
+    this._updateSearchResults({
+      current: 1,
+      ...(shouldClearFilters && { filters: [] })
+    });
   }
 
   if (
     (autocompleteResults || autocompleteSuggestions) &&
     searchTerm.length >= autocompleteMinimumCharacters
   ) {
-    this.debounceManager.runWithDebounce(
-      debounce,
-      "_updateAutocomplete",
-      this._updateAutocomplete,
-      searchTerm,
-      {
-        autocompleteResults,
-        autocompleteSuggestions
-      }
-    );
+    // this.debounceManager.runWithDebounce(
+    //   debounce,
+    //   "_updateAutocomplete",
+    //   this._updateAutocomplete,
+    //   searchTerm,
+    //   {
+    //     autocompleteResults,
+    //     autocompleteSuggestions
+    //   }
+    // );
+    this._updateAutocomplete({
+      autocompleteResults,
+      autocompleteSuggestions
+    });
   }
 }
