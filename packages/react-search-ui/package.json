@@ -1,6 +1,6 @@
 {
-  "name": "@elastic/react-search-ui",
-  "version": "1.2.0",
+  "name": "@ivantagehealth/react-search-ui",
+  "version": "1.0.0",
   "description": "A React library for building search experiences",
   "license": "Apache-2.0",
   "main": "lib",
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elastic/search-ui.git",
+    "url": "git+https://github.com/ivantage/search-ui.git",
     "directory": "packages/react-search-ui"
   },
   "scripts": {
@@ -30,7 +30,7 @@
     "prepare": "npm run build"
   },
   "bugs": {
-    "url": "https://github.com/elastic/search-ui/issues"
+    "url": "https://github.com/iVantage/search-ui"
   },
   "dependencies": {
     "@babel/runtime": "^7.5.4",
