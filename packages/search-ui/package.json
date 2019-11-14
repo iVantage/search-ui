@@ -1,5 +1,5 @@
 {
-  "name": "@elastic/search-ui",
+  "name": "@ivantagehealth/search-ui",
   "version": "1.2.0",
   "description": "A Headless Search UI library",
   "license": "Apache-2.0",
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elastic/search-ui.git",
+    "url": "git+https://github.com/ivantage/search-ui.git",
     "directory": "packages/search-ui"
   },
   "scripts": {
@@ -30,7 +30,7 @@
     "prepare": "npm run build"
   },
   "bugs": {
-    "url": "https://github.com/elastic/search-ui/issues"
+    "url": "https://github.com/ivantage/search-ui/issues"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",

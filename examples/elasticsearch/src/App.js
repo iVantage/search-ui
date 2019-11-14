@@ -11,9 +11,9 @@ import {
   ResultsPerPage,
   Paging,
   Sorting
-} from "@elastic/react-search-ui";
-import { Layout, SingleSelectFacet } from "@elastic/react-search-ui-views";
-import "@elastic/react-search-ui-views/lib/styles/styles.css";
+} from "@ivantagehealth/react-search-ui";
+import { Layout, SingleSelectFacet } from "@ivantagehealth/react-search-ui-views";
+import "@ivantagehealth/react-search-ui-views/lib/styles/styles.css";
 
 import buildRequest from "./buildRequest";
 import runRequest from "./runRequest";

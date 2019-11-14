@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Component } from "react";
-import { MultiCheckboxFacet } from "@elastic/react-search-ui-views";
+import { MultiCheckboxFacet } from "@ivantagehealth/react-search-ui-views";
 
 import { Facet, Filter, FilterType } from "../types";
 import { accentFold } from "../helpers";

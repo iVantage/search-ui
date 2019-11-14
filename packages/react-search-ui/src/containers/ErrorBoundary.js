@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Component } from "react";
 import { withSearch } from "..";
-import { ErrorBoundary } from "@elastic/react-search-ui-views";
+import { ErrorBoundary } from "@ivantagehealth/react-search-ui-views";
 
 export class ErrorBoundaryContainer extends Component {
   static propTypes = {

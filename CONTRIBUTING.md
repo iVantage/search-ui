@@ -127,7 +127,7 @@ option for this.
 1. In project you'll need to install all dependencies explicitly with the canary tag from npm:
 
    ```
-   npm install --save @elastic/react-search-ui@canary @elastic/search-ui-app-search-connector@canary @elastic/react-search-ui-views@canary search-ui-views@canary
+   npm install --save @ivantagehealth/react-search-ui@canary @ivantagehealth/search-ui-app-search-connector@canary @ivantagehealth/react-search-ui-views@canary search-ui-views@canary
    ```
 
 1. To Deploy, simply push your changes to the `canary` branch, then visit "https://search-ui-canary.netlify.com/"

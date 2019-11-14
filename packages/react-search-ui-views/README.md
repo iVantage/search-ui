@@ -1,6 +1,6 @@
 # react-search-ui-views
 
-Part of the [Search UI](https://github.com/elastic/search-ui) project.
+Part of the [Search UI](https://github.com/ivantage/search-ui) project.
 
 This is the view layer for [react-search-ui](../react-search-ui/README.md).
 
@@ -19,8 +19,8 @@ import {
   PagingInfo,
   Result,
   SearchBox
-} from "@elastic/react-search-ui-views";
-import "@elastic/react-search-ui-views/lib/styles/styles.css";
+} from "@ivantagehealth/react-search-ui-views";
+import "@ivantagehealth/react-search-ui-views/lib/styles/styles.css";
 
 export default function App() {
   return (

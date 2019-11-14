@@ -1,6 +1,6 @@
 # search-ui
 
-Part of the [Search UI](https://github.com/elastic/search-ui) project.
+Part of the [Search UI](https://github.com/ivantage/search-ui) project.
 
 The "Headless Search UI" that serves as a foundation for the [react-search-ui](../react-search-ui/README.md) library.
 
@@ -12,12 +12,12 @@ You'll get all of the benefit of Search UI, just with no view. The view is up to
 ## Usage
 
 ```shell
-npm install --save @elastic/search-ui
+npm install --save @ivantagehealth/search-ui
 ```
 
 ```js
-import { SearchDriver } from "@elastic/search-ui";
-import AppSearchAPIConnector from "@elastic/search-ui-app-search-connector";
+import { SearchDriver } from "@ivantagehealth/search-ui";
+import AppSearchAPIConnector from "@ivantagehealth/search-ui-app-search-connector";
 
 const connector = new AppSearchAPIConnector({
   searchKey: "search-371auk61r2bwqtdzocdgutmg",

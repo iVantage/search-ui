@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 import { withSearch } from "..";
-import { Paging } from "@elastic/react-search-ui-views";
+import { Paging } from "@ivantagehealth/react-search-ui-views";
 
 export function PagingContainer({
   className,

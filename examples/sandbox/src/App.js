@@ -1,8 +1,8 @@
 import React from "react";
 import moment from "moment";
 
-import AppSearchAPIConnector from "@elastic/search-ui-app-search-connector";
-import SiteSearchAPIConnector from "@elastic/search-ui-site-search-connector";
+import AppSearchAPIConnector from "@ivantagehealth/search-ui-app-search-connector";
+import SiteSearchAPIConnector from "@ivantagehealth/search-ui-site-search-connector";
 import {
   ErrorBoundary,
   Facet,
@@ -14,14 +14,14 @@ import {
   Paging,
   Sorting,
   WithSearch
-} from "@elastic/react-search-ui";
+} from "@ivantagehealth/react-search-ui";
 import {
   Layout,
   SingleSelectFacet,
   SingleLinksFacet,
   BooleanFacet
-} from "@elastic/react-search-ui-views";
-import "@elastic/react-search-ui-views/lib/styles/styles.css";
+} from "@ivantagehealth/react-search-ui-views";
+import "@ivantagehealth/react-search-ui-views/lib/styles/styles.css";
 
 const SORT_OPTIONS = [
   {

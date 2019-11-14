@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Component } from "react";
-import { Result } from "@elastic/react-search-ui-views";
+import { Result } from "@ivantagehealth/react-search-ui-views";
 
 import { withSearch } from "..";
 import { Result as ResultType } from "../types";

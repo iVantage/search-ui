@@ -46,7 +46,7 @@ Install **React Search UI** and the **App Search** connector.
 
 ```sh
 # Install React Search UI and a Connector, like the Elastic App Search Connector
-npm install --save @elastic/react-search-ui @elastic/search-ui-app-search-connector
+npm install --save @ivantagehealth/react-search-ui @ivantagehealth/search-ui-app-search-connector
 ```
 
 ## Creating a search experience
@@ -57,11 +57,11 @@ Use out of the box components, styles, and layouts to build a search experience 
 
 ```jsx
 import React from "react";
-import AppSearchAPIConnector from "@elastic/search-ui-app-search-connector";
-import { SearchProvider, Results, SearchBox } from "@elastic/react-search-ui";
-import { Layout } from "@elastic/react-search-ui-views";
+import AppSearchAPIConnector from "@ivantagehealth/search-ui-app-search-connector";
+import { SearchProvider, Results, SearchBox } from "@ivantagehealth/react-search-ui";
+import { Layout } from "@ivantagehealth/react-search-ui-views";
 
-import "@elastic/react-search-ui-views/lib/styles/styles.css";
+import "@ivantagehealth/react-search-ui-views/lib/styles/styles.css";
 
 const connector = new AppSearchAPIConnector({
   searchKey: "search-371auk61r2bwqtdzocdgutmg",
@@ -238,13 +238,13 @@ _Read the [Component Reference](./ADVANCED.md#component-reference) for a full br
 For basic styles, include:
 
 ```jsx
-import "@elastic/react-search-ui-views/lib/styles/styles.css";
+import "@ivantagehealth/react-search-ui-views/lib/styles/styles.css";
 ```
 
 For a basic layout, which helps quickly get a UI bootstrapped, use the [Layout](packages/react-search-ui-views/src/layouts/Layout.js) Component.
 
 ```jsx
-import { Layout } from "@elastic/react-search-ui-views";
+import { Layout } from "@ivantagehealth/react-search-ui-views";
 
 <Layout header={<SearchBox />} bodyContent={<Results />} />;
 ```

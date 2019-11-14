@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Component } from "react";
 import { withSearch } from "..";
-import { PagingInfo } from "@elastic/react-search-ui-views";
+import { PagingInfo } from "@ivantagehealth/react-search-ui-views";
 
 export class PagingInfoContainer extends Component {
   static propTypes = {

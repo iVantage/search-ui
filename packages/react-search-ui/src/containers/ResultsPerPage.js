@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Component } from "react";
 import { withSearch } from "..";
-import { ResultsPerPage } from "@elastic/react-search-ui-views";
+import { ResultsPerPage } from "@ivantagehealth/react-search-ui-views";
 
 export class ResultsPerPageContainer extends Component {
   static propTypes = {

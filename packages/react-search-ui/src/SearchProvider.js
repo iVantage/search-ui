@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 
-import { SearchDriver } from "@elastic/search-ui";
+import { SearchDriver } from "@ivantagehealth/search-ui";
 import SearchContext from "./SearchContext";
 
 import defaultA11yMessages from "./A11yNotifications";

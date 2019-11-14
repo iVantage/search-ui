@@ -1,6 +1,6 @@
 # search-ui-site-search-connector
 
-Part of the [Search UI](https://github.com/elastic/search-ui) project.
+Part of the [Search UI](https://github.com/ivantage/search-ui) project.
 
 This Connector is used to connect Search UI to Elastic's [Site Search](https://www.elastic.co/cloud/site-search-service) API.
 
@@ -23,11 +23,11 @@ Note that Site Search does not support certain features of Search UI:
 ## Usage
 
 ```shell
-npm install --save @elastic/search-ui-site-search-connector
+npm install --save @ivantagehealth/search-ui-site-search-connector
 ```
 
 ```js
-import SiteSearchAPIConnector from "@elastic/search-ui-site-search-connector";
+import SiteSearchAPIConnector from "@ivantagehealth/search-ui-site-search-connector";
 
 const connector = new SiteSearchAPIConnector({
   documentType: "national-parks",

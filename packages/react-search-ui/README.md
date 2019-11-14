@@ -1,6 +1,6 @@
 # Search UI: React Framework
 
-Part of the [Search UI](https://github.com/elastic/search-ui) project.
+Part of the [Search UI](https://github.com/ivantage/search-ui) project.
 
 React library for building search experiences.
 

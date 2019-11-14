@@ -1,17 +1,17 @@
 # search-ui-app-search-connector
 
-Part of the [Search UI](https://github.com/elastic/search-ui) project.
+Part of the [Search UI](https://github.com/ivantage/search-ui) project.
 
 This Connector is used to connect Search UI to Elastic's [App Search](https://www.elastic.co/cloud/app-search-service) API.
 
 ## Usage
 
 ```shell
-npm install --save @elastic/search-ui-app-search-connector
+npm install --save @ivantagehealth/search-ui-app-search-connector
 ```
 
 ```js
-import AppSearchAPIConnector from "@elastic/search-ui-app-search-connector";
+import AppSearchAPIConnector from "@ivantagehealth/search-ui-app-search-connector";
 
 const connector = new AppSearchAPIConnector({
   searchKey: "search-371auk61r2bwqtdzocdgutmg",

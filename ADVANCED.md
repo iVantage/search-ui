@@ -19,7 +19,7 @@
 
 ```
                                     |
-    @elastic/react-search-ui        |   @elastic/search-ui
+    @ivantagehealth/react-search-ui        |   @ivantagehealth/search-ui
                                     |
                                     |
           SearchProvider <--------------- SearchDriver
@@ -39,7 +39,7 @@
 
 The core is a separate, vanilla JS library which can be used for any JavaScript based implementation.
 
-> [@elastic/search-ui](https://github.com/elastic/search-ui/tree/master/packages/search-ui)
+> [@ivantagehealth/search-ui](https://github.com/elastic/search-ui/tree/master/packages/search-ui)
 
 The Headless Core implements the functionality behind a search experience, but without its own view. It provides the underlying "state" and "actions" associated with that view. For instance, the core provides a `setSearchTerm` action, which can be used to save a `searchTerm` property in the state. Calling `setSearchTerm` using the value of an `<input>` will save the `searchTerm` to be used to build a query.
 
@@ -298,7 +298,7 @@ Input element which accepts search terms and triggers a new search query.
 
 ```jsx
 
-import { SearchBox } from "@elastic/react-search-ui";
+import { SearchBox } from "@ivantagehealth/react-search-ui";
 
 ...
 
@@ -584,7 +584,7 @@ Displays all search results.
 
 ```jsx
 
-import { Results } from "@elastic/react-search-ui";
+import { Results } from "@ivantagehealth/react-search-ui";
 
 ...
 
@@ -619,7 +619,7 @@ Displays a search result.
 
 ```jsx
 
-import { Result } from "@elastic/react-search-ui";
+import { Result } from "@ivantagehealth/react-search-ui";
 
 ...
 
@@ -674,7 +674,7 @@ To override `resultsPerPage` default value [refer to the custom options example]
 
 ```jsx
 
-import { ResultsPerPage } from "@elastic/react-search-ui";
+import { ResultsPerPage } from "@ivantagehealth/react-search-ui";
 
 ...
 
@@ -685,7 +685,7 @@ import { ResultsPerPage } from "@elastic/react-search-ui";
 
 ```jsx
 
-import { SearchProvider, ResultsPerPage } from "@elastic/react-search-ui";
+import { SearchProvider, ResultsPerPage } from "@ivantagehealth/react-search-ui";
 
 <SearchProvider
     config={
@@ -718,8 +718,8 @@ Must configure the corresponding field in the `SearchProvider` [facets](#advance
 ### Example
 
 ```jsx
-import { Facet } from "@elastic/react-search-ui";
-import { MultiCheckboxFacet } from "@elastic/react-search-ui-views";
+import { Facet } from "@ivantagehealth/react-search-ui";
+import { MultiCheckboxFacet } from "@ivantagehealth/react-search-ui-views";
 
 ...
 
@@ -744,8 +744,8 @@ correctly. "Disjunctive" facets are facets that do not change when a selection i
 will remain as selectable options even after a selection is made.
 
 ```jsx
-import { Facet } from "@elastic/react-search-ui";
-import { MultiCheckboxFacet } from "@elastic/react-search-ui-views";
+import { Facet } from "@ivantagehealth/react-search-ui";
+import { MultiCheckboxFacet } from "@ivantagehealth/react-search-ui-views";
 
 ...
 
@@ -786,7 +786,7 @@ Shows a dropdown for selecting the current Sort.
 
 ```jsx
 
-import { Sorting } from "@elastic/react-search-ui";
+import { Sorting } from "@ivantagehealth/react-search-ui";
 
 ...
 
@@ -825,7 +825,7 @@ Navigate through pagination.
 
 ```jsx
 
-import { Paging } from "@elastic/react-search-ui";
+import { Paging } from "@ivantagehealth/react-search-ui";
 
 ...
 
@@ -849,7 +849,7 @@ Paging details, like "1 - 20 of 100 results".
 
 ```jsx
 
-import { PagingInfo } from "@elastic/react-search-ui";
+import { PagingInfo } from "@ivantagehealth/react-search-ui";
 
 ...
 
@@ -872,7 +872,7 @@ Handle unexpected errors.
 ### Example
 
 ```jsx
-import { ErrorBoundary } from "@elastic/react-search-ui";
+import { ErrorBoundary } from "@ivantagehealth/react-search-ui";
 
 ...
 
@@ -1021,8 +1021,8 @@ pages past page 1, indicating that they are not finding what they need on the fi
 of search results.
 
 ```jsx
-import { Paging } from "@elastic/react-search-ui";
-import { Paging as PagingView } from "@elastic/react-search-ui-views";
+import { Paging } from "@ivantagehealth/react-search-ui";
+import { Paging as PagingView } from "@ivantagehealth/react-search-ui-views";
 
 function reportChange(value) {
   // Some logic to report the change
@@ -1225,7 +1225,7 @@ Ex. Creating a Component for clearing all filters
 
 ```jsx
 import React from "react";
-import { withSearch } from "@elastic/react-search-ui";
+import { withSearch } from "@ivantagehealth/react-search-ui";
 
 function ClearFilters({ filters, clearFilters }) {
   return (
