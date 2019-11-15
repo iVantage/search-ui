@@ -1,6 +1,6 @@
 {
   "name": "@ivantagehealth/react-search-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A React library for building search experiences",
   "license": "Apache-2.0",
   "main": "lib",
@@ -35,7 +35,7 @@
   "dependencies": {
     "@babel/runtime": "^7.5.4",
     "@ivantagehealth/react-search-ui-views": "1.0.1",
-    "@ivantagehealth/search-ui": "1.0.1",
+    "@ivantagehealth/search-ui": "1.0.2",
     "debounce-fn": "^1.0.0"
   },
   "peerDependencies": {
